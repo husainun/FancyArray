@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Fancy Array</title>
+    <script type="text/javascript">
+      var arr2 = ["James","Jill","Jane","Jack"];
+      PrettyPrint(arr2, "<<", false);
+
+      function PrettyPrint(arr , symbol,reverse2){
+        if ((reverse2 == undefined) || reverse2==false)
+        {
+          reverse2 = false;
+          for (var i=0; i< arr.length; i++)
+          console.log(i + " " + symbol+ arr[i]);
+        }
+        else {
+          reverse2 = true;
+          var x=arr.length;
+          for (var i= x-1 ; i>=0; i--){
+            console.log(i + " " + symbol + arr[i]);
+          }
+        }
+      }
+    </script>
+
+  </head>
+  <body>
+  </body>
+</html>
